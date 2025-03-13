@@ -1,0 +1,97 @@
+.divprin{
+          background-color: white; 
+          padding: 20px; 
+          border: 2px solid #000; 
+          width: 80%; 
+          margin: 2.54cm;
+          border-radius: 20px;
+          
+
+}
+.titulo {
+          text-align: center;
+          color:cornflowerblue;
+          font-weight: 5000;
+          font-size: 60px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         
+
+}
+
+hr{
+          border: 2px solid cornflowerblue;
+          width: 50%;
+          margin: auto;
+}
+
+.div1{
+          background-color: #FEF9E1; 
+          padding: 20px; 
+          border: 1px solid #000; 
+          margin: 30px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          border-radius: 20px;
+
+
+}
+
+.entrada{
+          color:#FF9D23;
+          font-weight: 900;
+}
+
+.hoy {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: #C14600
+}
+
+.div2{
+          background-color: #E2E0C8; 
+          padding: 20px; 
+          border: 1px solid #000; 
+          margin: 30px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          border-radius: 20px;
+}
+
+.mis{
+          
+          color:#3D8D7A;
+          font-weight: 900;
+}
+
+.leer{
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: #818C78
+}
+
+.practicar{
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: #818C78
+
+}
+
+.hacer{
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: #818C78
+}
+
+.escribir{
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: #818C78
+}
+
+.div3{
+          background-color: lightblue; 
+          padding: 20px; 
+          border: 1px solid #5DADE2; 
+          margin: 30px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          border-radius: 20px; 
+}
+
+.lectura{
+          color:#2874A6;
+}
+
+
