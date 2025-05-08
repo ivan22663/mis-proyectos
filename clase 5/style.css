@@ -1,425 +1,622 @@
+/* Estilos base */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
       
-.superior {
-background-color: black;
-padding: 10px 20px;
-}
+      .container {
+          width: 100%;
+          max-width: 1920px;
+          margin: 0 auto;
+          overflow-x: hidden;
+      }
       
-.superior i {
-font-size: 24px;
-color: white;
-}
+      img {
+          max-width: 100%;
+          height: auto;
+      }
       
-.cabeza {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 0 auto;
-}
+      /* Header */
+      .superior {
+          background-color: black;
+          padding: 10px 20px;
+      }
       
-.izquierda-section {
-display: flex;
-align-items: center;
-gap: 10px;
- }
+      .superior i {
+          font-size: 24px;
+          color: white;
+      }
       
-.search-bar {
-padding: 5px;
-border: 1px solid #ccc;
-border-radius: 5px;
-}
+      .cabeza {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 auto;
+      }
       
-.centro-section {
-flex-grow: 1;
-display: flex;
-justify-content: center;
-}
+      .izquierda-section {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+      }
       
-.logo_tienda {
-width: 80px;
-height: 80px;
-}
+      .search-bar {
+          padding: 5px;
+          border: 1px solid black;
+          border-radius: 5px;
+          background-color: black;
+          color: white;
+      }
       
-.derecha-section {
-display: flex;
-gap: 15px;
-}
+      .centro-section {
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+      }
       
-.derecha-section p {
-display: flex;
-align-items: center;
-gap: 5px;
-color: white;
-}
+      .logo_tienda {
+          width: 240px;
+          height: 100px;
+          object-fit: contain;
+      }
       
+      .derecha-section {
+          display: flex;
+          gap: 15px;
+      }
       
-.accesos {
-display: flex;
-justify-content: center;
-cursor: pointer;
-height: 50px;
-width: 50;
-margin-right: 20px;
-}
+      .derecha-section p {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          color: white;
+          cursor: pointer;
+      }
       
-.accesos a {
-text-decoration: none; 
-color: black; 
-font-weight: bold;
-padding: 20px;
-}
-
-.accesos a:hover {
-color: red; 
-}
-
-.ropa_pop {
-display: flex;
-justify-content: center; 
-align-items: center; 
-
-}     
-.ropa1 {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 500px; 
-width: 600px; 
-object-fit: cover;
-padding: 20px;
-
-}
-.c{
-background-color: #008080;
-flex-grow: 1;
-}
-
-.a{
-background-color: #00FFFF;
-flex-grow: 1;
-}
-
-.ropa_pop p {
-display: flex;
-align-items: center;
-justify-content: center;
-bottom: 10px;
-font-size: 24px;
-font-weight: bold;
-color: white;
-padding: 5px 0;
-}
-
-.marcas{
-display: grid;
-grid-template-columns: repeat(9, 1fr);
-}
-
-.marcas img {
-height: 150px;
-width: 150px;
-}
-
-.ropa_top {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-justify-items: center;
-margin-top: 30px;
-overflow: hidden; 
-}
+      /* Navegación */
+      .accesos {
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          height: 50px;
+          align-items: center;
+          flex-wrap: wrap;
+      }
       
-.camisa1, .camisa2, .camisa3 {
-display: flex;
-flex-direction: column;
-align-items: center;
-max-width: 650px;
-height: 100%; 
-}
+      .accesos a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          padding: 10px 20px;
+          white-space: nowrap;
+      }
       
-.camisa1 {
-background-color: orangered;
-}
+      .accesos a:hover {
+          color: red;
+      }
       
-.camisa2 {
-background-color: darksalmon;
-}
+      /* Sección ropa_pop */
+      .ropa_pop {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-wrap: wrap;
+      }
       
-.camisa3 {
-background-color: yellow;
-}
+      .c, .a {
+          flex: 1 1 50%;
+          text-align: center;
+          padding: 20px;
+          min-width: 300px;
+      }
       
-.ropa_top img {
-height: 650px;
-width: 650px;
-object-fit: cover;
-border-radius: 10px;
-}
+      .c {
+          background-color: rgba(37,198,208,255);
+      }
       
-.boton {
-background-color: white;
-color: black;
-font-size: 1.1em;
-border-radius: 20px;
-cursor: pointer;
-display: block;
-width: 400px;
-margin-top: 10px;
-text-align: center;
-border: none;
-height: 50px;
-margin-bottom: 10px;
-}
-
-.titulo h1{
-text-align: center;
-margin-top: 20px;
-}
-
-.titulo p{
-text-align: center;
-}
-
-.mas_camisas {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 20px;
-padding: 20px;
-}
-        
-.calle {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-background-color: #f5f5f5;
-padding: 15px;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-cursor: pointer;
-}
-        
-.calle img {
-max-width: 100%;
-height: auto;
-margin-bottom: 10px;
-}
-
-.precio{
-color:orange
-}
-
-.buton{
-background-color: black;
-color:white;
-border-radius: 10px;
-width: 250px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-font-size: 1.1em;
-border: none;
-}
-
-.load{
-display: flex;
-justify-content: center;
-margin-top: 20px;
-}
-
-.redes{
-background-color:#f5f5f513 ;
-}
-.instagram h1{
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 100px;
-padding-top: 50px;
-}
-
-.instagram p{
-display: flex;
-justify-content: center;   
-font-size: 1em;
-margin-top: 5px;
-}
-
-.modelo{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.modelos {
-width: 350px;
-padding-top: 50px;
-}
-        
-.modelos img {
-width: 100%;
-height: 550px; 
-object-fit: cover; 
-border-radius: 10px; 
-}
-
-.pagos{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-}
-.envio i{
-font-size: 64px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.money i{
-font-size: 64px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.certificado i{
-font-size: 64px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.pagos h1, p{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-  
-  .footer {
-    background-color: #0c1d25;
-    color: white;
-    padding: 40px 20px 20px;
-    font-size: 14px;
-  }
-  
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .footer-section {
-    flex: 1 1 300px;
-    margin: 20px;
-  }
-  
-  .footer-section h2.logo {
-    color: #ffb84d;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-section h3 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 8px;
-  }
-  
-  .newsletter-form {
-    display: flex;
-    margin-top: 10px;
-  }
-  
-  .newsletter-form input {
-    padding: 10px;
-    flex: 1;
-    border: none;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .newsletter-form button {
-    background-color: orange;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 0 3px 3px 0;
-    cursor: pointer;
-  }
-  
-  .social-icons {
-    margin-top: 15px;
-  }
-  
-  .social-icons i {
-    margin-right: 10px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  .footer-bottom {
-    border-top: 1px solid #333;
-    padding-top: 20px;
-    text-align: center;
-    font-size: 12px;
-    color: #aaa;
-  }
-  
-  .payment-icons img {
-    width: 40px;
-    margin: 0 5px;
-    vertical-align: middle;
-  }
-  
-  
-@media (max-width: 1028px) {
-    .ropa_top {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .mas_camisas {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .modelo {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .pagos {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        margin: 10px 0;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
-    }
-
-    .newsletter-form input,
-    .newsletter-form button {
-        width: 100%;
-        margin-bottom: 10px;
-    }    
- }
+      .a {
+          background-color: rgba(0,157,202,255);
+      }
+      
+      .ropa1 {
+          height: 400px;
+          width: auto;
+          object-fit: contain;
+          max-width: 100%;
+      }
+      
+      .texto_debajo {
+          margin-top: 10px;
+          line-height: 1.1;
+          text-align: center;
+          padding: 0 20px;
+      }
+      
+      .texto_debajo .small {
+          font-size: 16px;
+          color: white;
+          margin: 0;
+          display: block;
+      }
+      
+      .texto_debajo .large {
+          font-size: clamp(24px, 5vw, 48px);
+          font-weight: bold;
+          color: white;
+          opacity: 0.2;
+          margin: 0;
+          margin-top: -5px;
+      }
+      
+      /* Marcas */
+      .marcas {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          gap: 20px;
+          padding: 20px 50px;
+          justify-items: center;
+      }
+      
+      .marcas img {
+          height: 100px;
+          width: 100px;
+          object-fit: contain;
+      }
+      
+      /* Ropa top */
+      .ropa_top {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          justify-items: center;
+          margin-top: 30px;
+          gap: 20px;
+      }
+      
+      .camisa1, .camisa2, .camisa3 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+      }
+      
+      .camisa1 {
+          background-color: rgba(250,107,91,255);
+      }
+      
+      .camisa2 {
+          background-color: rgba(255,158,126,255);
+      }
+      
+      .camisa3 {
+          background-color: rgba(255,217,120,255);
+      }
+      
+      .ropa_top img {
+          width: 100%;
+          height: auto;
+          max-height: 650px;
+          object-fit: cover;
+          border-radius: 10px;
+      }
+      
+      .boton {
+          background-color: white;
+          color: black;
+          font-size: clamp(1em, 1.5vw, 1.1em);
+          border-radius: 20px;
+          cursor: pointer;
+          display: block;
+          width: 80%;
+          max-width: 400px;
+          margin: 20px auto;
+          padding: 12px 0;
+          text-align: center;
+          border: none;
+          transition: all 0.3s ease;
+      }
+      
+      .boton:hover {
+          transform: scale(1.05);
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      
+      /* Productos */
+      .titulo h1 {
+          text-align: center;
+          margin-top: 20px;
+          font-size: clamp(24px, 3vw, 32px);
+      }
+      
+      .titulo p {
+          text-align: center;
+          margin: 10px 0;
+      }
+      
+      .mas_camisas {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 20px;
+          padding: 20px;
+      }
+      
+      .calle {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 15px;
+          cursor: pointer;
+      }
+      
+      .calle img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+          border-radius: 5px;
+      }
+      
+      .precio {
+          color: rgba(189,145,106,255);
+          font-weight: bold;
+          margin-top: 5px;
+      }
+      
+      .buton {
+          background-color: black;
+          color: white;
+          border-radius: 50px;
+          width: 250px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          font-size: 1.1em;
+          border: none;
+          margin: 20px auto;
+      }
+      
+      .load {
+          display: flex;
+          justify-content: center;
+          margin: 20px 0;
+      }
+      
+      /* Instagram/Modelos */
+      .redes {
+          background-color: #f5f5f5;
+          padding: 20px 0;
+      }
+      
+      .instagram h1 {
+          text-align: center;
+          margin: 20px 0;
+          font-size: clamp(24px, 3vw, 32px);
+      }
+      
+      .instagram p {
+          text-align: center;
+          font-size: 1em;
+          margin: 0 auto 20px;
+          max-width: 600px;
+          padding: 0 20px;
+      }
+      
+      .modelo {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: 20px;
+          padding: 20px;
+          justify-items: center;
+          margin: 0 auto;
+          max-width: 1800px;
+      }
+      
+      .modelos {
+          width: 100%;
+          max-width: 320px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      
+      .modelos img {
+          width: 100%;
+          height: 500px;
+          object-fit: cover;
+          border-radius: 10px;
+          transition: transform 0.3s ease;
+      }
+      
+      .modelos img:hover {
+          transform: scale(1.02);
+      }
+      
+      /* Pagos */
+      .pagos {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          padding: 40px;
+          background-color: #fff;
+          gap: 20px;
+      }
+      
+      .envio, .money, .certificado {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+          position: relative;
+      }
+      
+      .money {
+          border-left: 1px solid #ddd;
+          border-top: none;
+      }
+      
+      .certificado {
+          border-left: 1px solid #ddd;
+          border-top: none;
+      }
+      
+      .envio i,
+      .money i,
+      .certificado i {
+          font-size: 64px;
+          margin-bottom: 15px;
+          color: #d39436;
+      }
+      
+      .pagos h1 {
+          font-size: 18px;
+          color: #333;
+          margin-bottom: 10px;
+      }
+      
+      .pagos p {
+          font-size: 14px;
+          color: #666;
+          line-height: 1.4;
+          max-width: 250px;
+      }
+      
+      /* Footer */
+      .footer {
+          background-color: #0c1d25;
+          color: white;
+          padding: 40px 20px 20px;
+          font-size: 14px;
+      }
+      
+      .footer-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: auto;
+          max-width: 1800px;
+      }
+      
+      .footer-section {
+          flex: 1 1 300px;
+          margin: 20px;
+          min-width: 250px;
+      }
+      
+      .footer-section h2.logo {
+          color: #ffb84d;
+          font-size: 24px;
+          margin-bottom: 20px;
+      }
+      
+      .footer-section h3 {
+          margin-bottom: 10px;
+          font-size: 18px;
+      }
+      
+      .footer-section ul {
+          list-style: none;
+          padding: 0;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+      }
+      
+      .footer-section ul li a {
+          color: white;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 8px;
+          transition: color 0.3s;
+      }
+      
+      .footer-section ul li a:hover {
+          color: #ffb84d;
+      }
+      
+      .newsletter-form {
+          display: flex;
+          margin-top: 10px;
+          flex-wrap: wrap;
+      }
+      
+      .newsletter-form input {
+          padding: 10px;
+          flex: 1;
+          min-width: 200px;
+          border: none;
+          border-radius: 3px 0 0 3px;
+      }
+      
+      .newsletter-form button {
+          background-color: orange;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 0 3px 3px 0;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+      
+      .newsletter-form button:hover {
+          background-color: #e69500;
+      }
+      
+      .social-icons {
+          margin-top: 15px;
+          display: flex;
+          gap: 10px;
+      }
+      
+      .social-icons i {
+          font-size: 18px;
+          cursor: pointer;
+          transition: color 0.3s;
+      }
+      
+      .social-icons i:hover {
+          color: #ffb84d;
+      }
+      
+      .footer-bottom {
+          border-top: 1px solid #333;
+          padding-top: 20px;
+          font-size: 12px;
+          color: #aaa;
+          margin-top: 20px;
+      }
+      
+      .footer-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          max-width: 1800px;
+          margin: 0 auto;
+      }
+      
+      .payment-icons {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 10px;
+      }
+      
+      .payment-icons img {
+          width: 40px;
+          height: auto;
+      }
+      
+      .copyright {
+          margin: 10px 0;
+      }
+      
+      /* Media Queries */
+      @media (max-width: 1799px) {
+          .modelo {
+              grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+          }
+          
+          .modelos img {
+              height: 450px;
+          }
+      }
+      
+      @media (max-width: 1399px) {
+          .modelo {
+              grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+          }
+          
+          .modelos img {
+              height: 400px;
+          }
+      }
+      
+      @media (max-width: 1199px) {
+          .pagos {
+              grid-template-columns: 1fr;
+          }
+          
+          .money, .certificado {
+              border-left: none;
+              border-top: 1px solid #ddd;
+              padding-top: 30px;
+          }
+          
+          .footer-section ul {
+              grid-template-columns: 1fr;
+          }
+      }
+      
+      @media (max-width: 991px) {
+          .cabeza {
+              flex-direction: column;
+              gap: 15px;
+          }
+          
+          .centro-section {
+              order: -1;
+          }
+          
+          .modelo {
+              grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          }
+          
+          .modelos img {
+              height: 350px;
+          }
+      }
+      
+      @media (max-width: 767px) {
+          .ropa_pop {
+              flex-direction: column;
+          }
+          
+          .c, .a {
+              width: 100%;
+          }
+          
+          .modelo {
+              grid-template-columns: repeat(2, 1fr);
+          }
+          
+          .modelos img {
+              height: 300px;
+          }
+          
+          .footer-section {
+              flex: 1 1 100%;
+              margin-bottom: 30px;
+          }
+      }
+      
+      @media (max-width: 575px) {
+          .accesos {
+              flex-direction: column;
+              height: auto;
+          }
+          
+          .accesos a {
+              padding: 10px;
+          }
+          
+          .modelo {
+              grid-template-columns: 1fr;
+          }
+          
+          .modelos img {
+              height: 400px;
+          }
+          
+          .payment-icons {
+              justify-content: center;
+          }
+          
+          .copyright {
+              text-align: center;
+              width: 100%;
+          }
+      }
