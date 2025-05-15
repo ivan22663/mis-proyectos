@@ -172,6 +172,13 @@
           margin-top: 30px;
           gap: 20px;
       }
+
+.ropa_top .boton {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 250px;
+}
+
       
       .camisa1, .camisa2, .camisa3 {
           display: flex;
