@@ -1,75 +1,138 @@
-
- .container2{
-  padding: 0%;
+/* === ESTILOS GENERALES === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
   background-color: #111;
-  color: white; 
-  display: flex;
-  width: 100%;
+  color: white;
   height: 100vh;
+  display: flex;
   justify-content: center;
- }
- .container{
-  padding: 0%;
-  height: 100%;
- }
-
-.main {
-  width: 70%;
-  background-color: #1a1a1a;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* <-- CAMBIO: estirar columnas a la misma altura */
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  height: 90vh; /* Opcional: garantiza un alto máximo visual */
 }
 
+/* === CONTENIDO PRINCIPAL === */
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex: 1 1 320px;
+  max-width: 400px;
+  background-color: #111;
+  box-sizing: border-box;
+}
+.informacion {
+  flex: 1 1 300px;
+  max-width: 400px;
+  box-sizing: border-box;
+  height: 100%; /* <-- NUEVO */
+}
+.main {
+  display: inline-block;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  height: 100%; /* <-- NUEVO */
+  box-sizing: border-box;
+}
+
+.section-title {
+  background-color: #66ff00;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+/* === TIPOGRAFÍA === */
 h1 {
   font-size: 4em;
   color: #70ff00;
-  margin:0;
-  font-family: "a r i a l", serif;  
+  margin: 0;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
- 
 }
 
-.apellido{
-   color: #70ff00;
-    margin:0;
-    font-size: 3.5em;
+.apellido {
+  font-size: 3.5em;
+  color: #70ff00;
+  margin: 0;
 }
 
 h3 {
-  color: #ccc;
-  font-weight: 400;
-  margin:0;
   font-size: 1.5em;
-  
+  font-weight: 400;
+  margin: 0;
+  padding: 10px;
+  color: #ccc;
 }
 
-.me{
-  color:#000;
-}
 .highlight {
   color: #a5ff00;
-  
 }
 
+/* === PERFIL === */
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.perfil h1,
+.perfil h3 {
+  margin: 5px 0;
+}
+
+.perfil .informacion {
+  padding-top: 20px;
+}
+
+.imagen-redonda {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* === INFORMACIÓN === */
 .informacion {
   display: flex;
   flex-direction: column;
   background-color: white;
   padding: 20px;
-
-  
 }
-.informacion p {
-  margin: 5px 0;
- color: #000;
+
+.informacion h3,
+.informacion p,
+.language-skill p {
+  color: #000;
 }
 
 .informacion h3 {
-  margin: 10px 0;
-  color:#000;
   font-size: 1.5em;
   font-weight: 700;
-  
+  margin: 10px 0;
 }
 
+.informacion p {
+  margin: 5px 0;
+}
+
+/* === HABILIDADES === */
 .language-skill {
   display: flex;
   align-items: center;
@@ -79,7 +142,6 @@ h3 {
 .language-skill p {
   margin-right: 10px;
   font-size: 1em;
-  color: #000;
 }
 
 .dots {
@@ -90,8 +152,8 @@ h3 {
 .dot {
   width: 10px;
   height: 10px;
-  background: #000;
   border-radius: 50%;
+  background: #000;
 }
 
 .dot.filled {
@@ -102,432 +164,86 @@ h3 {
   background: #000;
 }
 
-.job-entry {
+/* === SECCIONES DE DATOS === */
+.me,
+.edu,
+.cacion {
+  width: 300px;
+  background: #70ff00;
+  padding: 1px;
+  margin: 10px 0;
+}
+
+.me h2,
+.edu h2,
+.cacion h2 {
+  margin: 2px;
+  color: #000;
+}
+
+/* === HOBBIES === */
+.hobbies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hobbies i {
+  font-size: 64px;
+}
+
+/* === EXPERIENCIA LABORAL / EDUCACIÓN (Timeline) === */
+.job-entry,
+.job-entry1 {
+  position: relative;
+  padding-left: 30px;
   margin-bottom: 20px;
 }
 
-.job-entry span {
-  display: block;
-  font-size: 0.9em;
-  color: #aaa;
-}
-
-.imagen-redonda {
-  width: 150px; 
-  height: 150px; 
-  border-radius: 50%;  
-  object-fit: cover;  
-  margin-bottom: 20px; 
-}
-
-.perfil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.perfil h1, .perfil h3 {
-  margin: 5px 0;
-}
-
-.perfil .informacion {
-  padding-top: 20px;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.hobbies{
- display: grid;
- grid-template-columns:1fr 1fr;
-
-}
-
-.hobbies i{
-  font-size: 64px ;
-}
-
-.me{
-  width: 300px ;
-  background: #70ff00;
-}
-
-.me h2{
-  margin:2px;
-}
-
-.edu{
-  width: 300px ;
-  background: #70ff00;
-}
- 
-.edu h2{
-  margin:2px;
-  color:#000;
-}
-
-.cacion{
-  width: 300px ;
-  background: #70ff00;
-}
-
-.cacion h2{
-  margin:2px;
-  color:#000;
-}
-
-.edu {
-  width: 300px;
-  background: #70ff00;
-  padding: 10px;
-}
-
-.job-entry {
-  position: relative;
-  padding-left: 30px; /* Espacio para el punto y la línea */
-  margin-bottom: 0; /* Espaciado entre elementos */
-}
-
-.job-entry::before {
-  content: "";
-  position: absolute;
-  left: 10px; /* Ubicación del punto */
-  top: 5px; /* Ajuste vertical */
-  width: 10px; /* Tamaño del punto */
-  height: 10px; /* Tamaño del punto */
-  background-color: #70ff00; /* Color del punto */
-  border-radius: 50%; /* Hace que sea un círculo */
-  z-index: 1; /* Asegura que esté sobre la línea */
-}
-
-.job-entry::after {
-  content: "";
-  position: absolute;
-  left: 13px; /* Centrado con el punto */
-  top: 0px; /* Inicia desde arriba */
-  width: 3px; /* Grosor de la línea */
-  height: 100%; /* Largo de la línea */
-  background-color: #70ff00; /* Color de la línea */
-}
-
-/* Oculta la última línea */
-.job-entry:last-child::after {
-  display: none;
-}
-
-
-.job-entry1 {
-  position: relative;
-  padding-left: 30px; /* Espacio para el punto y la línea */
-  margin-bottom: 0; /* Espaciado entre elementos */
-}
-
+.job-entry::before,
 .job-entry1::before {
   content: "";
   position: absolute;
-  left: 10px; /* Ubicación del punto */
-  top: 5px; /* Ajuste vertical */
-  width: 10px; /* Tamaño del punto */
-  height: 10px; /* Tamaño del punto */
-  background-color: #70ff00; /* Color del punto */
-  border-radius: 50%; /* Hace que sea un círculo */
-  z-index: 1; /* Asegura que esté sobre la línea */
+  left: 10px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #70ff00;
+  border-radius: 50%;
+  z-index: 1;
 }
 
-.job-entry1::after {
-  content: "";
-  position: absolute;
-  left: 13px; /* Centrado con el punto */
-  top: 0px; /* Inicia desde arriba */
-  width: 3px; /* Grosor de la línea */
-  height: 100%; /* Largo de la línea */
-  background-color: #70ff00; /* Color de la línea */
-}
-
-/* Oculta la última línea */
+.job-entry:last-child::after,
 .job-entry1:last-child::after {
   display: none;
 }
 
-
-
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #111;
-  color: white;
-  display: flex;
-  width: 50%;
- 
-
-}
-
-.main {
-  width: 70%;
-  padding: 30px;
-  background-color: #1a1a1a;
-}
-
-h1 {
-  font-size: 4em;
-  color: #70ff00;
-  margin:0;
-  font-family: "a r i a l", serif;  
-  font-weight: 400;
- 
-}
-
-.apellido{
-   color: #70ff00;
-    margin:0;
-    font-size: 3.5em;
-}
-
-h3 {
-  color: #ccc;
-  font-weight: 400;
-  margin:0;
-  font-size: 1.5em;
-  padding: 10px;
-  
-}
-
-.me{
-  color:#000;
-  
-}
-.highlight {
-  color: #a5ff00;
-  
-}
-
-.informacion {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 20px;
-
-  
-}
-.informacion p {
-  margin: 5px 0;
- color: #000;
-}
-
-.informacion h3 {
-  margin: 10px 0;
-  color:#000;
-  font-size: 1.5em;
-  font-weight: 700;
-  
-}
-
-.language-skill {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.language-skill p {
-  margin-right: 10px;
-  font-size: 1em;
-  color: #000;
-}
-
-.dots {
-  display: flex;
-  gap: 5px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  background: #000;
-  border-radius: 50%;
-}
-
-.dot.filled {
-  background: #affd73;
-}
-
-.dot.filled.negro {
-  background: #000;
-}
-
-.job-entry {
-  margin-bottom: 20px;
-}
-
-.job-entry span {
-  display: block;
-  font-size: 0.9em;
-  color: #aaa;
-}
-
-.imagen-redonda {
-  width: 150px; 
-  height: 150px; 
-  border-radius: 50%;  
-  object-fit: cover;  
-  margin-bottom: 20px; 
-}
-
-.perfil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.perfil h1, .perfil h3 {
-  margin: 5px 0;
-}
-
-.perfil .informacion {
-  padding-top: 20px;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.hobbies{
- display: grid;
- grid-template-columns:1fr 1fr;
-
-}
-
-.hobbies i{
-  font-size: 64px ;
-}
-
-.me{
-  width: 300px ;
-  background: #70ff00;
-}
-
-.me h2{
-  margin:2px;
-}
-
-.edu{
-  width: 300px ;
-  background: #70ff00;
-  padding: 1px;
-  margin: 10px;
-}
- 
-.edu h2{
-  margin:2px;
-  color:#000;
-}
-
-.cacion{
-  width: 300px ;
-  background: #70ff00;
-  padding: 1px;
-  margin: 10px;
-}
-
-.cacion h2{
-  margin:2px;
-  color:#000;
-}
-
-.edu {
-  width: 300px;
-  background: #70ff00;
-  padding: 1px;
-}
-
-.job-entry {
-  position: relative;
-  padding-left: 30px; 
-  margin-bottom: 0; 
-}
-
-.job-entry::before {
-  content: "";
-  position: absolute;
-  left: 10px; 
-  top: 5px; 
-  width: 10px; 
-  height: 10px; 
-  background-color: #70ff00; 
-  border-radius: 50%; 
-  z-index: 1; 
-}
-
-.job-entry::after {
-  content: "";
-  position: absolute;
-  left: 13px; 
-  top: 0px; 
-  width: 3px; 
-  height: 100%; 
-  background-color: #70ff00; 
-}
-
-
-
-
-.job-entry1 {
-  position: relative;
-  padding-left: 30px; 
-  margin-bottom: 0; 
-}
-
-.job-entry1::before {
-  content: "";
-  position: absolute;
-  left: 10px; 
-  top: 5px; 
-  width: 10px;
-  height: 10px; 
-  background-color: #70ff00; 
-  border-radius: 50%; 
-  z-index: 1; 
-}
-
-.job-entry1::after {
-  content: "";
-  position: absolute;
-  left: 13px; 
-  top: 0px;
-  width: 3px; 
-  height: 100%;
-  background-color: #70ff00; 
-}
-
-.job-entry1 strong{
-  padding: 10px;
-}
-
-.job-entry1 {
-  margin-bottom: 20px;
-}
-
+.job-entry span,
 .job-entry1 span {
   display: block;
   font-size: 0.9em;
   color: #aaa;
+}
+
+.job-entry1 strong {
+  padding: 10px;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .informacion, .container2 {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
 }
