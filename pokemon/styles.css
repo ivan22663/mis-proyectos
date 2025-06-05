@@ -1,0 +1,101 @@
+body {
+    background: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.logo {
+    margin-top: 20px;
+    width: 400px;
+}
+.pokedex {
+    background: cadetblue;
+    border-radius: 20px;
+    border: 5px solid #4285f4;
+    width: 350px;
+    margin: 40px auto 0 auto;
+    padding: 30px 20px 20px 20px;
+    box-shadow: 0 8px 24px #8884;
+}
+.nombre {
+    font-size: 2em;
+    font-weight: bold;
+}
+.numero {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.info {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.habilidad {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+.sprites {
+    margin: 10px 0;
+}
+.sprites img {
+    width: 172px;
+    
+}
+.tipo, .debilidad {
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin: 5px 4px;
+    font-weight: bold;
+    color: #222;
+    font-size: 1em;
+}
+.tipo {
+    background: #ffe082;
+    border: 2px solid #bdb76b;
+}
+.debilidad {
+    background: #90caf9;
+    color: #fff;
+    border: none;
+}
+.debilidad.fuego { background: #ff7043; }
+.debilidad.agua { background: #42a5f5; }
+.debilidad.planta { background: #66bb6a; }
+.debilidad.electrico { background: #ffd600; color: #222; }
+.debilidad.hielo { background: #4fc3f7; }
+.debilidad.lucha { background: #d32f2f; }
+.debilidad.veneno { background: #ab47bc; }
+.debilidad.tierra { background: #bcaaa4; color: #222; }
+.debilidad.volador { background: #81d4fa; color: #222; }
+.debilidad.psiquico { background: #f06292; }
+.debilidad.bicho { background: #aed581; color: #222; }
+.debilidad.roca { background: #a1887f; }
+.debilidad.fantasma { background: #9575cd; }
+.debilidad.dragon { background: #1976d2; }
+.debilidad.siniestro { background: #616161; }
+.debilidad.acero { background: #90a4ae; color: #222; }
+.debilidad.hada { background: #f8bbd0; color: #222; }
+.estadisticas {
+    margin: 20px 0 10px 0;
+    text-align: left;
+}
+.estadistica {
+    margin: 4px 0;
+    font-size: 1em;
+}
+.barra {
+    display: inline-block;
+    height: 12px;
+    border-radius: 8px;
+    background: #42a5f5;
+    vertical-align: middle;
+}
+.label {
+    display: inline-block;
+    width: 110px;
+}
+.titulo {
+   font-size: 1.1em;
+}
