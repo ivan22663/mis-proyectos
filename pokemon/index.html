@@ -15,9 +15,9 @@
             normal: "#bdb76b", fire: "#ff7043", water: "#42a5f5", electric: "#ffd600", grass: "#66bb6a",
             ice: "#4fc3f7", fighting: "#d32f2f", poison: "#ab47bc", ground: "#bcaaa4", flying: "#81d4fa",
             psychic: "#f06292", bug: "#aed581", rock: "#a1887f", ghost: "#9575cd", dragon: "#1976d2",
-            dark: "#616161", steel: "#90a4ae", fairy: "#f8bbd0" 
+            dark: "#616161", steel: "#90a4ae", fairy: "#f8bbd0"
         };
-        
+
         const typeNames = {
             normal: "Normal", fire: "Fuego", water: "Agua", electric: "Eléctrico", grass: "Planta",
             ice: "Hielo", fighting: "Lucha", poison: "Veneno", ground: "Tierra", flying: "Volador",
@@ -65,6 +65,11 @@
             const debilidadesArr = await getDebilidades(data.types);
             const debilidades = Array.from(new Set(debilidadesArr));
 
+            
+            const color1 = typeColors[tipos[0]?.name] || "#ccc";
+            const color2 = tipos[1] ? (typeColors[tipos[1].name] || "#ccc") : color1;
+            pokedex.style.background = `linear-gradient(135deg, ${color1}, ${color2})`;
+
             pokedex.innerHTML = `
                 <div class="nombre">${nombre}</div>
                 <div class="numero">${numero}</div>
@@ -103,3 +108,4 @@
     </script>
 </body>
 </html>
+
